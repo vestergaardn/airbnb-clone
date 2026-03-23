@@ -154,9 +154,14 @@ export const useProvidePlaces = () => {
     const [loading, setLoading] = useState(true);
 
     const getPlaces = async () => {
-        const { data } = await axiosInstance.get('/places');
-        setPlaces(data.places);
-        setLoading(false);
+        try {
+            const { data } = await axiosInstance.get('/places');
+            setPlaces(data.places);
+        } catch (error) {
+            console.error('Failed to fetch places:', error);
+        } finally {
+            setLoading(false);
+        }
     };
 
     useEffect(() => {
