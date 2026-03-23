@@ -108,20 +108,675 @@ const SAMPLE_LISTINGS = [
     maxGuests: 3,
     price: 110,
   },
+  // --- 50 additional listings ---
+  {
+    title: 'Lakeside Retreat with Private Dock',
+    address: 'Lake Como, Lombardy, Italy',
+    photos: [
+      'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+    ],
+    description: 'Elegant lakeside villa with a private dock on Lake Como. Enjoy stunning water views, lush gardens, and easy boat access to charming villages.',
+    perks: ['wifi', 'parking', 'tv'],
+    extraInfo: 'Boat rental available. Private chef on request.',
+    maxGuests: 8,
+    price: 380,
+  },
+  {
+    title: 'Desert Oasis with Infinity Pool',
+    address: 'Scottsdale, Arizona, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+    ],
+    description: 'Modern desert retreat with an infinity pool overlooking the Sonoran Desert. Stunning sunsets, private hot tub, and full outdoor kitchen.',
+    perks: ['wifi', 'parking', 'tv', 'pets'],
+    extraInfo: 'Pool heated year-round. Golf courses nearby.',
+    maxGuests: 6,
+    price: 275,
+  },
+  {
+    title: 'Historic Brownstone in Back Bay',
+    address: 'Boston, Massachusetts, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+    ],
+    description: 'Beautifully restored 19th-century brownstone in the heart of Back Bay. Original hardwood floors, marble fireplaces, and modern amenities.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Walking distance to Newbury Street and the Charles River.',
+    maxGuests: 5,
+    price: 225,
+  },
+  {
+    title: 'Tropical Treehouse with Ocean Views',
+    address: 'Ubud, Bali, Indonesia',
+    photos: [
+      'https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800',
+      'https://images.unsplash.com/photo-1559599238-308793637427?w=800',
+    ],
+    description: 'Unique bamboo treehouse perched above the rice terraces. Open-air living, outdoor rain shower, and a private plunge pool surrounded by tropical gardens.',
+    perks: ['wifi', 'parking'],
+    extraInfo: 'Breakfast included. Yoga classes available.',
+    maxGuests: 2,
+    price: 120,
+  },
+  {
+    title: 'Waterfront Condo with Harbor Views',
+    address: 'Sydney, New South Wales, Australia',
+    photos: [
+      'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800',
+      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+    ],
+    description: 'Sleek waterfront condo overlooking Sydney Harbour. Watch ferries pass from your private balcony while enjoying views of the Opera House and Harbour Bridge.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Building has pool and gym. Ferry terminal steps away.',
+    maxGuests: 3,
+    price: 290,
+  },
+  {
+    title: 'Rustic Farmhouse in Wine Country',
+    address: 'Napa Valley, California, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+      'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=800',
+    ],
+    description: 'Charming farmhouse surrounded by vineyards in Napa Valley. Features a wrap-around porch, outdoor fire pit, and complimentary wine tasting at partner wineries.',
+    perks: ['wifi', 'parking', 'pets'],
+    extraInfo: 'Bikes available for vineyard tours. Pet-friendly.',
+    maxGuests: 6,
+    price: 245,
+  },
+  {
+    title: 'Minimalist Studio in Shibuya',
+    address: 'Tokyo, Japan',
+    photos: [
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800',
+    ],
+    description: 'Compact but beautifully designed studio in the heart of Shibuya. Japanese-style soaking tub, tatami area, and steps from the famous Shibuya Crossing.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Pocket WiFi provided. Metro station 2 minutes away.',
+    maxGuests: 2,
+    price: 95,
+  },
+  {
+    title: 'Cliffside Villa Overlooking the Aegean',
+    address: 'Santorini, Greece',
+    photos: [
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800',
+      'https://images.unsplash.com/photo-1602343168585-1ae41a5a0c0a?w=800',
+    ],
+    description: 'Iconic whitewashed villa perched on the caldera cliffs of Oia. Private terrace with plunge pool and unobstructed sunset views over the Aegean Sea.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Airport transfer included. Wine tasting tours arranged.',
+    maxGuests: 4,
+    price: 350,
+  },
+  {
+    title: 'Converted Warehouse Loft',
+    address: 'Melbourne, Victoria, Australia',
+    photos: [
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800',
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800',
+    ],
+    description: 'Industrial-chic warehouse conversion in Fitzroy. Soaring ceilings, polished concrete floors, and surrounded by the best cafes, bars, and street art in Melbourne.',
+    perks: ['wifi', 'tv', 'parking'],
+    extraInfo: 'Tram stop right outside. Local coffee guide provided.',
+    maxGuests: 4,
+    price: 165,
+  },
+  {
+    title: 'Alpine Chalet with Hot Tub',
+    address: 'Zermatt, Switzerland',
+    photos: [
+      'https://images.unsplash.com/photo-1520984032042-162d526883e0?w=800',
+      'https://images.unsplash.com/photo-1605346576608-92f1346b67d6?w=800',
+    ],
+    description: 'Traditional Swiss chalet with modern luxury. Private outdoor hot tub with views of the Matterhorn, ski-in/ski-out access, and a wood-burning fireplace.',
+    perks: ['wifi', 'parking', 'tv'],
+    extraInfo: 'Ski passes can be arranged. Boot warmers provided.',
+    maxGuests: 8,
+    price: 420,
+  },
+  {
+    title: 'Bohemian Flat in Le Marais',
+    address: 'Paris, France',
+    photos: [
+      'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800',
+      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800',
+    ],
+    description: 'Elegant Parisian apartment in the trendy Le Marais district. Exposed beams, French windows overlooking a quiet courtyard, and walking distance to the Louvre.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Bakery and cafe recommendations included. Metro 3 min walk.',
+    maxGuests: 3,
+    price: 195,
+  },
+  {
+    title: 'Seaside Bungalow on the Cape',
+    address: 'Cape Town, South Africa',
+    photos: [
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+      'https://images.unsplash.com/photo-1598228723793-52759bba239c?w=800',
+    ],
+    description: 'Laid-back beach bungalow in Camps Bay with panoramic Atlantic Ocean views. Steps from the beach, with Table Mountain as your backdrop.',
+    perks: ['wifi', 'parking', 'tv', 'pets'],
+    extraInfo: 'Beach towels and umbrellas provided. Braai area available.',
+    maxGuests: 5,
+    price: 140,
+  },
+  {
+    title: 'Penthouse with Panoramic River Views',
+    address: 'Bangkok, Thailand',
+    photos: [
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800',
+      'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=800',
+    ],
+    description: 'Stunning riverside penthouse overlooking the Chao Phraya River. Infinity pool, sky bar, and easy access to temples, markets, and street food.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'River taxi right outside. Rooftop pool access included.',
+    maxGuests: 4,
+    price: 85,
+  },
+  {
+    title: 'Stone Villa in the Tuscan Hills',
+    address: 'Tuscany, Italy',
+    photos: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800',
+    ],
+    description: 'Restored stone farmhouse surrounded by olive groves and rolling Tuscan hills. Private pool, outdoor dining terrace, and a fully equipped country kitchen.',
+    perks: ['wifi', 'parking', 'tv', 'pets'],
+    extraInfo: 'Olive oil and wine from the estate included. Cooking classes available.',
+    maxGuests: 10,
+    price: 310,
+  },
+  {
+    title: 'Colorful Casa in Historic Centro',
+    address: 'Mexico City, Mexico',
+    photos: [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+      'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800',
+    ],
+    description: 'Vibrant colonial-era casa in Roma Norte with high ceilings, colorful tiles, and a lush interior courtyard. Steps from the best taquerias and mezcalerias in the city.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Rooftop terrace with city views. Local food guide provided.',
+    maxGuests: 4,
+    price: 75,
+  },
+  {
+    title: 'Glass Cabin in the Wilderness',
+    address: 'Reykjavik, Iceland',
+    photos: [
+      'https://images.unsplash.com/photo-1520984032042-162d526883e0?w=800',
+      'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800',
+    ],
+    description: 'Stunning glass-walled cabin perfect for watching the Northern Lights from bed. Located in a remote valley with hot springs, waterfalls, and volcanic landscapes nearby.',
+    perks: ['wifi', 'parking'],
+    extraInfo: 'Private hot tub. 4WD recommended in winter.',
+    maxGuests: 2,
+    price: 230,
+  },
+  {
+    title: 'Art Deco Apartment in South Beach',
+    address: 'Miami, Florida, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800',
+    ],
+    description: 'Stylish Art Deco apartment one block from Ocean Drive. Retro-inspired interiors, rooftop pool, and the best of Miami nightlife at your doorstep.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Beach chairs and umbrella provided. Valet parking available.',
+    maxGuests: 4,
+    price: 200,
+  },
+  {
+    title: 'Riverside Lodge in the Rainforest',
+    address: 'Queenstown, New Zealand',
+    photos: [
+      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800',
+      'https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=800',
+    ],
+    description: 'Secluded lodge on the banks of the Shotover River surrounded by native bush. Floor-to-ceiling windows, wood-burning stove, and absolute tranquility.',
+    perks: ['wifi', 'parking', 'pets'],
+    extraInfo: 'Kayaks and mountain bikes provided. Bungee jumping 10 min away.',
+    maxGuests: 4,
+    price: 195,
+  },
+  {
+    title: 'Rooftop Terrace Flat in the Medina',
+    address: 'Fez, Morocco',
+    photos: [
+      'https://images.unsplash.com/photo-1539437829697-1b4ed5aebd19?w=800',
+      'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800',
+    ],
+    description: 'Restored traditional dar in the ancient Fez Medina. Zellige tilework, carved cedar ceilings, and a rooftop terrace overlooking the old city.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Breakfast and hammam visit included. Guided Medina tour available.',
+    maxGuests: 6,
+    price: 80,
+  },
+  {
+    title: 'Houseboat on the Canals',
+    address: 'Amsterdam, Netherlands',
+    photos: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800',
+    ],
+    description: 'Unique houseboat experience on the Prinsengracht canal. Cozy, modern interior with a sunny deck perfect for watching boats drift by.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Bikes included. Anne Frank House a 5-minute walk.',
+    maxGuests: 2,
+    price: 170,
+  },
+  {
+    title: 'Jungle Villa with Private Cenote',
+    address: 'Playa del Carmen, Mexico',
+    photos: [
+      'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800',
+      'https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800',
+    ],
+    description: 'Spectacular villa hidden in the Riviera Maya jungle with a private cenote for swimming. Open-air design blends indoor and outdoor living seamlessly.',
+    perks: ['wifi', 'parking', 'tv'],
+    extraInfo: 'Private cenote access. Concierge for excursions available.',
+    maxGuests: 6,
+    price: 260,
+  },
+  {
+    title: 'Skyline Studio with Floor-to-Ceiling Windows',
+    address: 'Dubai, United Arab Emirates',
+    photos: [
+      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800',
+      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800',
+    ],
+    description: 'Ultra-modern studio on the 45th floor with views of the Burj Khalifa and Arabian Gulf. Access to pool, gym, and spa in one of Dubai\'s most iconic towers.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Dubai Mall connected via skybridge. Airport pickup available.',
+    maxGuests: 2,
+    price: 180,
+  },
+  {
+    title: 'Colonial Mansion in the Old Town',
+    address: 'Cartagena, Colombia',
+    photos: [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800',
+    ],
+    description: 'Stunning colonial mansion in the Walled City with a courtyard pool, rooftop jacuzzi, and colorful bougainvillea everywhere you look.',
+    perks: ['wifi', 'tv', 'parking'],
+    extraInfo: 'Staff includes butler and cook. Walking distance to everything.',
+    maxGuests: 10,
+    price: 340,
+  },
+  {
+    title: 'Cozy Canal House in Jordaan',
+    address: 'Amsterdam, Netherlands',
+    photos: [
+      'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800',
+      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800',
+    ],
+    description: 'Charming 17th-century canal house in the beloved Jordaan neighborhood. Steep Dutch stairs, exposed beams, and canal views from every window.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Bikes provided. Farmers market on Saturdays next door.',
+    maxGuests: 3,
+    price: 190,
+  },
+  {
+    title: 'Safari Lodge with Wildlife Views',
+    address: 'Maasai Mara, Kenya',
+    photos: [
+      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800',
+      'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800',
+    ],
+    description: 'Luxury tented lodge on the edge of the Maasai Mara. Fall asleep to the sounds of the bush and wake up to elephants at the watering hole.',
+    perks: ['wifi', 'parking'],
+    extraInfo: 'Game drives included twice daily. All meals provided.',
+    maxGuests: 2,
+    price: 450,
+  },
+  {
+    title: 'Surf Shack Steps from the Beach',
+    address: 'Byron Bay, New South Wales, Australia',
+    photos: [
+      'https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800',
+      'https://images.unsplash.com/photo-1598228723793-52759bba239c?w=800',
+    ],
+    description: 'Laid-back surf shack just 50 meters from the beach. Board storage, outdoor shower, hammock on the porch, and the most chill vibes in Byron.',
+    perks: ['wifi', 'parking', 'pets'],
+    extraInfo: 'Surfboards and wetsuits available. Dogs welcome.',
+    maxGuests: 4,
+    price: 135,
+  },
+  {
+    title: 'Mountain View Apartment with Balcony',
+    address: 'Innsbruck, Austria',
+    photos: [
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800',
+      'https://images.unsplash.com/photo-1520984032042-162d526883e0?w=800',
+    ],
+    description: 'Bright alpine apartment with a large balcony framing the Nordkette mountains. Ski lifts in winter, hiking trails in summer, all from your doorstep.',
+    perks: ['wifi', 'tv', 'parking'],
+    extraInfo: 'Ski storage available. Cable car station 5 min walk.',
+    maxGuests: 4,
+    price: 155,
+  },
+  {
+    title: 'Whitewashed Studio on a Greek Island',
+    address: 'Mykonos, Greece',
+    photos: [
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800',
+      'https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=800',
+    ],
+    description: 'Classic Cycladic studio with a private terrace and sea views. Whitewashed walls, blue shutters, and a short walk to the windmills and Little Venice.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Beach towels provided. Scooter rental arranged.',
+    maxGuests: 2,
+    price: 160,
+  },
+  {
+    title: 'Heritage Haveli with Courtyard',
+    address: 'Jaipur, Rajasthan, India',
+    photos: [
+      'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800',
+      'https://images.unsplash.com/photo-1539437829697-1b4ed5aebd19?w=800',
+    ],
+    description: 'Stay in a restored 200-year-old haveli with intricate mirror work, painted ceilings, and a peaceful inner courtyard. Located in the Pink City\'s old quarter.',
+    perks: ['wifi', 'tv', 'parking'],
+    extraInfo: 'Traditional Rajasthani breakfast included. Rickshaw tours arranged.',
+    maxGuests: 4,
+    price: 65,
+  },
+  {
+    title: 'Eco Cabin in the Redwoods',
+    address: 'Big Sur, California, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800',
+      'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800',
+    ],
+    description: 'Off-grid eco cabin nestled among ancient redwoods. Solar-powered, with a wood-fired hot tub and a deck overlooking the Pacific coast.',
+    perks: ['wifi', 'parking'],
+    extraInfo: 'Limited cell service — perfect for disconnecting. Firewood included.',
+    maxGuests: 2,
+    price: 210,
+  },
+  {
+    title: 'Elegant Flat in Edinburgh New Town',
+    address: 'Edinburgh, Scotland, United Kingdom',
+    photos: [
+      'https://images.unsplash.com/photo-1560185007-cde436f6a4d0?w=800',
+      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800',
+    ],
+    description: 'Georgian flat in Edinburgh\'s New Town with original cornicing, high ceilings, and views toward Edinburgh Castle. Steps from Princes Street and the Royal Mile.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Whisky recommendations and map provided.',
+    maxGuests: 4,
+    price: 175,
+  },
+  {
+    title: 'Overwater Bungalow with Glass Floor',
+    address: 'Bora Bora, French Polynesia',
+    photos: [
+      'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800',
+      'https://images.unsplash.com/photo-1540541338287-41700207dee6?w=800',
+    ],
+    description: 'Dream overwater bungalow with glass floor panels to watch tropical fish below. Private deck with ladder into the turquoise lagoon. Mount Otemanu views.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Canoe breakfast available. Snorkeling gear provided.',
+    maxGuests: 2,
+    price: 550,
+  },
+  {
+    title: 'Modern Townhouse in Shoreditch',
+    address: 'London, England, United Kingdom',
+    photos: [
+      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+      'https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800',
+    ],
+    description: 'Stylish townhouse in trendy Shoreditch with a private garden. Surrounded by street art, vintage shops, and London\'s best brunch spots.',
+    perks: ['wifi', 'tv', 'entrance', 'parking'],
+    extraInfo: 'Tube station 4 min walk. Local restaurant guide included.',
+    maxGuests: 5,
+    price: 240,
+  },
+  {
+    title: 'Boutique Apartment in Palermo Soho',
+    address: 'Buenos Aires, Argentina',
+    photos: [
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800',
+    ],
+    description: 'Designer apartment in the heart of Palermo Soho. Surrounded by boutique shops, craft cocktail bars, and some of the best steakhouses in Buenos Aires.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Tango lesson recommendations included. Subte nearby.',
+    maxGuests: 3,
+    price: 70,
+  },
+  {
+    title: 'Hilltop Villa with Vineyard Views',
+    address: 'Douro Valley, Portugal',
+    photos: [
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+      'https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=800',
+    ],
+    description: 'Romantic hilltop villa overlooking terraced vineyards of the Douro Valley. Private pool, wine cellar, and endless views of the UNESCO-listed landscape.',
+    perks: ['wifi', 'parking', 'tv'],
+    extraInfo: 'Port wine tasting included. River cruises arranged.',
+    maxGuests: 6,
+    price: 220,
+  },
+  {
+    title: 'Bamboo Eco Lodge in the Rice Paddies',
+    address: 'Chiang Mai, Thailand',
+    photos: [
+      'https://images.unsplash.com/photo-1604014237800-1c9102c219da?w=800',
+      'https://images.unsplash.com/photo-1559599238-308793637427?w=800',
+    ],
+    description: 'Sustainable bamboo lodge surrounded by emerald rice paddies. Open-air bathroom, mosquito-net canopy bed, and the sounds of nature all around.',
+    perks: ['wifi', 'parking', 'pets'],
+    extraInfo: 'Thai cooking class included. Elephant sanctuary nearby.',
+    maxGuests: 2,
+    price: 55,
+  },
+  {
+    title: 'Penthouse Loft with Harbour Bridge Views',
+    address: 'Sydney, New South Wales, Australia',
+    photos: [
+      'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800',
+      'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800',
+    ],
+    description: 'Spectacular penthouse loft in The Rocks with floor-to-ceiling windows framing the Harbour Bridge. Designer furnishings, private terrace, and iconic views.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Opera House 10 min walk. Concierge available.',
+    maxGuests: 3,
+    price: 380,
+  },
+  {
+    title: 'Cozy Cabin by the Fjord',
+    address: 'Tromsø, Norway',
+    photos: [
+      'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?w=800',
+      'https://images.unsplash.com/photo-1587061949409-02df41d5e562?w=800',
+    ],
+    description: 'Snug wooden cabin on the edge of a Norwegian fjord. Perfect base for Northern Lights viewing, whale watching, and midnight sun in summer.',
+    perks: ['wifi', 'parking'],
+    extraInfo: 'Northern Lights alerts provided. Sauna on site.',
+    maxGuests: 4,
+    price: 185,
+  },
+  {
+    title: 'Sunny Loft Near La Rambla',
+    address: 'Barcelona, Spain',
+    photos: [
+      'https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?w=800',
+      'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800',
+    ],
+    description: 'Bright, airy loft in the Gothic Quarter with a private rooftop terrace. Walking distance to La Rambla, La Boqueria market, and the beach.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Tapas tour recommendations included. Metro 2 min walk.',
+    maxGuests: 4,
+    price: 155,
+  },
+  {
+    title: 'Plantation-Style Villa with Pool',
+    address: 'Seminyak, Bali, Indonesia',
+    photos: [
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+    ],
+    description: 'Luxurious villa with a colonial plantation feel. Large private pool, tropical garden, outdoor living pavilion, and just minutes from Seminyak beach and restaurants.',
+    perks: ['wifi', 'parking', 'tv', 'pets'],
+    extraInfo: 'Daily housekeeping included. Scooter rental available.',
+    maxGuests: 8,
+    price: 145,
+  },
+  {
+    title: 'Mountain Refuge with Panoramic Views',
+    address: 'Chamonix, France',
+    photos: [
+      'https://images.unsplash.com/photo-1520984032042-162d526883e0?w=800',
+      'https://images.unsplash.com/photo-1605346576608-92f1346b67d6?w=800',
+    ],
+    description: 'Cozy mountain chalet with jaw-dropping Mont Blanc views. Sauna, fireplace, and ski-in/ski-out access to the Grands Montets.',
+    perks: ['wifi', 'parking', 'tv'],
+    extraInfo: 'Ski locker and boot warmers provided. Fondue night on Fridays.',
+    maxGuests: 6,
+    price: 290,
+  },
+  {
+    title: 'Converted Chapel with Garden',
+    address: 'Devon, England, United Kingdom',
+    photos: [
+      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=800',
+      'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800',
+    ],
+    description: 'Unique stay in a beautifully converted Victorian chapel. Original stained glass windows, vaulted ceilings, and a walled garden with a fire pit.',
+    perks: ['wifi', 'parking', 'pets'],
+    extraInfo: 'Cream tea hamper provided on arrival. Coast path 1 mile.',
+    maxGuests: 4,
+    price: 160,
+  },
+  {
+    title: 'Sleek Condo in the Marina District',
+    address: 'San Francisco, California, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1600607687644-aac4c3eac7f4?w=800',
+      'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800',
+    ],
+    description: 'Modern condo near the Golden Gate Bridge with bay views. Open-plan living, gourmet kitchen, and a neighborhood full of boutique shops and cafes.',
+    perks: ['wifi', 'tv', 'parking'],
+    extraInfo: 'Bike rental for Golden Gate rides. Garage parking included.',
+    maxGuests: 3,
+    price: 235,
+  },
+  {
+    title: 'Traditional Hanok in Bukchon',
+    address: 'Seoul, South Korea',
+    photos: [
+      'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800',
+      'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800',
+    ],
+    description: 'Authentic Korean hanok with heated ondol floors and a tranquil inner courtyard. Located in the historic Bukchon village between two grand palaces.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Traditional hanbok rental arranged. Tea ceremony available.',
+    maxGuests: 2,
+    price: 110,
+  },
+  {
+    title: 'Oceanfront Estate with Private Beach',
+    address: 'Maui, Hawaii, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800',
+      'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800',
+    ],
+    description: 'Expansive beachfront estate on Maui\'s north shore. Private beach access, infinity pool, outdoor lanai, and views of the Pacific that go on forever.',
+    perks: ['wifi', 'parking', 'tv', 'pets'],
+    extraInfo: 'Snorkeling gear and kayaks provided. Whale watching in season.',
+    maxGuests: 10,
+    price: 520,
+  },
+  {
+    title: 'Artist Studio in Montmartre',
+    address: 'Paris, France',
+    photos: [
+      'https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800',
+      'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800',
+    ],
+    description: 'Romantic artist\'s garret in Montmartre with skylights flooding the space with Parisian light. Steps from Sacré-Cœur and the Place du Tertre.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Art supplies provided for guests who are inspired. Wine shop downstairs.',
+    maxGuests: 2,
+    price: 145,
+  },
+  {
+    title: 'Luxury Riad with Hammam',
+    address: 'Essaouira, Morocco',
+    photos: [
+      'https://images.unsplash.com/photo-1539437829697-1b4ed5aebd19?w=800',
+      'https://images.unsplash.com/photo-1528255671579-01b9e182ed1d?w=800',
+    ],
+    description: 'Exquisite riad in the windswept coastal town of Essaouira. Private hammam, rooftop terrace with Atlantic views, and a courtyard dripping with jasmine.',
+    perks: ['wifi', 'tv'],
+    extraInfo: 'Surfing and windsurfing lessons arranged. Breakfast included.',
+    maxGuests: 6,
+    price: 105,
+  },
+  {
+    title: 'Floating Home on Lake Union',
+    address: 'Seattle, Washington, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800',
+      'https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800',
+    ],
+    description: 'Charming floating home on Lake Union with views of the Space Needle and downtown Seattle. Watch seaplanes land while sipping coffee on your private deck.',
+    perks: ['wifi', 'tv', 'parking'],
+    extraInfo: 'Kayak included. Pike Place Market 10 min drive.',
+    maxGuests: 3,
+    price: 215,
+  },
+  {
+    title: 'Trulli House in the Olive Groves',
+    address: 'Alberobello, Puglia, Italy',
+    photos: [
+      'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800',
+      'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
+    ],
+    description: 'Stay in a UNESCO-listed trullo with its iconic cone-shaped roof. Surrounded by olive groves, with a private garden and outdoor dining under the stars.',
+    perks: ['wifi', 'parking', 'pets'],
+    extraInfo: 'Homemade olive oil included. Orecchiette cooking class available.',
+    maxGuests: 4,
+    price: 125,
+  },
+  {
+    title: 'Penthouse Suite in Gangnam',
+    address: 'Seoul, South Korea',
+    photos: [
+      'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800',
+      'https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=800',
+    ],
+    description: 'Ultra-modern penthouse in the Gangnam district with floor-to-ceiling city views. Smart home technology, rain shower, and access to building\'s sky lounge.',
+    perks: ['wifi', 'tv', 'entrance'],
+    extraInfo: 'Subway station in the building. K-beauty shopping guide provided.',
+    maxGuests: 2,
+    price: 165,
+  },
+  {
+    title: 'Adobe Casita in the Desert',
+    address: 'Santa Fe, New Mexico, United States',
+    photos: [
+      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
+      'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=800',
+    ],
+    description: 'Authentic adobe casita with kiva fireplaces, vigas ceilings, and a private courtyard with a hot tub under the stars. Art galleries steps away.',
+    perks: ['wifi', 'parking', 'tv', 'pets'],
+    extraInfo: 'Green chile roasting season in fall is not to be missed.',
+    maxGuests: 4,
+    price: 175,
+  },
 ];
 
 router.post('/', async (req, res) => {
   try {
-    // Check if seed data already exists
-    const existingPlaces = await Place.countDocuments();
-    if (existingPlaces > 0) {
-      return res.status(200).json({
-        message: `Database already has ${existingPlaces} listings. Skipping seed.`,
-        seeded: false,
-      });
-    }
-
-    // Create a demo user
+    // Find or create demo user
     let demoUser = await User.findOne({ email: 'demo@airbnb-clone.com' });
     if (!demoUser) {
       demoUser = await User.create({
@@ -131,18 +786,32 @@ router.post('/', async (req, res) => {
       });
     }
 
-    // Create all listings
+    // Check which listings already exist (by title) to avoid duplicates
+    const existingTitles = (await Place.find({}, 'title')).map((p) => p.title);
+    const newListings = SAMPLE_LISTINGS.filter(
+      (l) => !existingTitles.includes(l.title)
+    );
+
+    if (newListings.length === 0) {
+      return res.status(200).json({
+        message: 'All listings already exist. Nothing to seed.',
+        seeded: false,
+        total: existingTitles.length,
+      });
+    }
+
     const places = await Place.insertMany(
-      SAMPLE_LISTINGS.map((listing) => ({
+      newListings.map((listing) => ({
         ...listing,
         owner: demoUser._id,
       }))
     );
 
     res.status(201).json({
-      message: `Seeded ${places.length} listings successfully`,
+      message: `Seeded ${places.length} new listings successfully`,
       seeded: true,
-      count: places.length,
+      added: places.length,
+      total: existingTitles.length + places.length,
     });
   } catch (error) {
     console.error('Seed error:', error);
