@@ -723,14 +723,8 @@ const SAMPLE_LISTINGS = [
 
 router.post('/', async (req, res) => {
   try {
-    // Check if seed data already exists
-    const existingPlaces = await Place.countDocuments();
-    if (existingPlaces > 0) {
-      return res.status(200).json({
-        message: `Database already has ${existingPlaces} listings. Skipping seed.`,
-        seeded: false,
-      });
-    }
+    // Clear existing seed data and re-seed
+    await Place.deleteMany({});
 
     // Create a demo user
     let demoUser = await User.findOne({ email: 'demo@airbnb-clone.com' });
